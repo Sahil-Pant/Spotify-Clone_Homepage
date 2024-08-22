@@ -1,156 +1,219 @@
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background: #000000;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.sidebar{
+.sidebar {
+    /* left section */
     width: 370px;
     background: #000000;
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
-    padding: 10px;
-    
+    padding: 8px;
+
+
+
+
 }
 
 
-.sidebar-nav{
-    background: #111111;
+.sidebar-nav {
+    /* left section box  */
+    background: #121212;
     border-radius: 10px;
-    padding: 20px 10px;
+    padding: 5px 10px;
     margin-bottom: 10px;
 
 }
 
-.sidebar-nav .logo{
-    width: 120px;
+.sidebar-nav .logo {
+    /* logo */
+    width: 110px;
 }
 
 .sidebar-nav .logo img {
-    width: 100%;
+    width: 78%;
+    margin-top: 12px;
+    margin-left: 15px;
     transition: 0.2s;
+    margin-bottom: 5px;
 }
+
 .sidebar-nav .logo img:hover {
-    transform: scale(1.1);
+    transform: scale(1.014);
 }
-.sidebar-nav ul{
+
+.sidebar-nav ul {
     list-style: none;
 
+
 }
 
-.sidebar-nav ul li{
-    padding: 10px 20px;
+.sidebar-nav ul li {
+    /* home&search section  */
+    padding: 16px 20px;
     transition: 0.2s;
-    
-    
+
+
 }
-.sidebar-nav ul li:hover{
-    transform: scale(1.03);
+
+.scr li {
+    /* home&search section */
+    transition: 0.2s;
+
+}
+
+.scr li:hover {
+    transform: scale(1.013);
+}
+
+.lib {
+    /* library */
+    transition: 0.2s;
+}
+
+.lib:hover {
+    transform: scale(1.013);
 }
 
 
-.sidebar-nav ul li a:hover{
-    color:white;
-    
+.sidebar-nav ul li a:hover {
+    color: white;
+
 }
 
-.sidebar-nav ul li a{
+.sidebar-nav ul li a {
     text-decoration: none;
     color: #b3b3b3;
     font-size: 16fx;
     font-weight: 600;
-    
 
 }
 
 
-.sidebar-nav ul li a i{
+.sidebar-nav ul li a i {
 
     font-size: 20px;
     margin-right: 10px;
+
 }
-.library::after{
+
+.library::after {
     content: '+';
-    float :right;
+    float: right;
     text-align: center;
     border-radius: 50%;
     font-size: 15px;
+
 }
 
-.create-playlist{
-    background: #302f2f;
+.create-playlist {
+    background: #1f1f1f;
     padding: 30px 15px;
     border-radius: 10px;
     margin-bottom: 10px;
+
 }
-.sidebar-scroll{
+
+.cp {
+    margin-left: -22px;
+    margin-right: -40px;
+
+}
+
+.sidebar-scroll {
     height: 120px;
     overflow-y: auto;
-       
+
 }
-.sidebar-scroll::-webkit-scrollbar{
+
+.sidebar-scroll::-webkit-scrollbar {
     background: transparent;
+
 }
-.sidebar-scroll::-webkit-scrollbar-thumb{
+
+.sidebar-scroll::-webkit-scrollbar-thumb {
     background: transparent;
     width: 10px;
 }
 
-.sidebar-scroll:hover::-webkit-scrollbar-thumb{
-    background: #ccc;
+.sidebar-scroll:hover::-webkit-scrollbar-thumb {
+    background: #454545;
     width: 5px;
 }
-.create-playlist h4{
+
+.create-playlist h4 {
     color: whitesmoke;
     font-size: 15px;
+
 }
 
-.create-playlist p{
+.create-playlist p {
     color: white;
     font-size: 12px;
     margin: 12px 0;
+
 }
 
-.create-playlist button{
+.create-playlist button {
     padding: 8px 20px;
     border: 0;
     outline: 0;
     border-radius: 20px;
     font-weight: 600;
+    transition: 0.2s;
+
 }
 
-.privacy ul li a{
+.create-playlist button:hover {
+    transform: scale(1.05);
+}
+
+.privacy ul li a {
     text-decoration: none;
     color: #575656;
     font-size: 11px;
     font-weight: 600;
     margin: 0 6px;
+
+
 }
-.privacy ul li a:hover{
-    text-decoration:underline;
+
+.privacy ul li a:hover {
+    text-decoration: underline;
     content: #bebcbe;
 }
 
-.privacy ul{
+.privacy ul {
+    /* hight ho skti yha*/
     list-style: none;
     margin-top: 20px;
+
+
 }
 
-.privacy ul li{
+.privacy ul li {
     padding: 0 12px;
     padding-bottom: 8px;
+
 }
 
-.eng-btn{
-    padding: 20px 30px;
+.eng-btn {
+    padding: 20px 18px;
+
+
+
 }
-.eng-btn button{
+
+.eng-btn button {
     padding: 10px 30px;
     background: transparent;
     border: 0;
@@ -160,38 +223,53 @@ body{
     border-radius: 20px;
     margin: 20px 0;
     transition: 0.2s;
+
+
 }
 
-.eng-btn button:hover{
+.eng-btn button:hover {
     padding: 11px 31px;
     border: 1px solid white;
-    transform: scale(1.1);
+    transform: scale(1.018);
 }
 
-.main-section{
+.main-section {
     margin-left: 370px;
-    background: #111111;
+    background: linear-gradient(#1f1f1f, #121212, #121212, #121212);
     height: 100vh;
     overflow: auto;
+    border-radius: 8px;
+    
+   
+
 }
-.main-section .top-nav{
-    padding: 20px 30px;
-    background: #090909;
+
+.main-section .top-nav {
+    padding: 16px 30px;
+    background: #121212;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: sticky;
+    width: 100%;
+    z-index: 9999;
+    top: 0;
+
 }
-.main-section .top-nav button{
+
+.main-section .top-nav button {
     background: transparent;
     border: 0;
     outline: 0;
 }
+
 .main-section .top-nav .prev-btn button i {
     color: #838181;
     font-size: 22px;
     margin-right: 20px;
 }
-.top-nav .login-btn .sign-up{
+
+.top-nav .login-btn .sign-up {
     color: #838181;
     font-size: 16px;
     font-weight: 600;
@@ -199,11 +277,12 @@ body{
     transition: 0.2s;
 }
 
-.top-nav .login-btn .sign-up:hover{
+.top-nav .login-btn .sign-up:hover {
     color: white;
     transform: scale(1.1);
 }
-.top-nav .login-btn .log-in{
+
+.top-nav .login-btn .log-in {
     color: #242323;
     font-size: 16px;
     font-weight: 600;
@@ -213,58 +292,67 @@ body{
     border-radius: 20px;
     transition: 0.2s;
 }
-.top-nav .login-btn .log-in:hover{
-    background: #e3e3e3;    
+
+.top-nav .login-btn .log-in:hover {
+    background: #e3e3e3;
     transform: scale(1.1);
 }
 
-.spotify-playlists{
-    padding: 20px 40px;
+.spotify-playlists {
+    padding: 50px 18px;
 }
-.spotify-playlists h2{
+
+.spotify-playlists h2 {
     color: #fff;
     font-size: 22px;
     margin-bottom: 20px;
 }
-.spotify-playlists .cards{
+
+.spotify-playlists .cards {
     display: flex;
     gap: 20px;
     overflow: hidden;
 
 }
-.spotify-playlists .cards .items{
+
+.spotify-playlists .cards .items {
     width: 200px;
     min-width: 140px;
-    /*background-color: #292929;*/
     cursor: pointer;
     border-radius: 6px;
     padding: 15px;
 }
-.spotify-playlists .cards .items:hover{
+
+.spotify-playlists .cards .items:hover {
     opacity: 1;
-    background-color: #3d3c3c;
+    background: linear-gradient(#313131, #1a1a1a, #1a1a1a, #1a1a1a);
 }
 
-.spotify-playlists .cards .items img{
+.spotify-playlists .cards .items img {
     width: 100%;
     border-radius: 100px;
     margin-bottom: 10px;
 }
-.spotify-playlists .items h4{
+
+.spotify-playlists .items h4 {
     color: white;
 }
-.spotify-playlists .items p{
+
+.spotify-playlists .items p {
     color: #d4d4d4;
     font-size: 13px;
     margin-top: 10px;
 }
-.spotify-playlists .items p:hover{
+
+.spotify-playlists .items p:hover {
     text-decoration: underline;
 }
-.spotify-playlists .play-btns{
+
+.spotify-playlists .play-btns {
     position: relative;
 }
-.spotify-playlists .play-btns i{
+
+.spotify-playlists .play-btns i {
     font-size: 45px;
     position: absolute;
     right: 4px;
@@ -272,30 +360,34 @@ body{
     opacity: 0;
     transition: 0.2s;
 }
-.spotify-playlists .cards .items:hover .play-btns i{
+
+.spotify-playlists .cards .items:hover .play-btns i {
     opacity: 1;
     transform: scale(1.03);
     transform: translateY(-20px);
-   
+
 }
 
 /**/
 
-.spotify-playlist{
-    padding: 20px 40px;
+.spotify-playlist {
+    padding: 20px 18px;
 }
-.spotify-playlist h2{
+
+.spotify-playlist h2 {
     color: #fff;
     font-size: 22px;
     margin-bottom: 20px;
 }
-.spotify-playlist .card{
+
+.spotify-playlist .card {
     display: flex;
     gap: 20px;
     overflow: hidden;
 
 }
-.spotify-playlist .card .item{
+
+.spotify-playlist .card .item {
     width: 200px;
     min-width: 140px;
     /*background-color: #292929;*/
@@ -303,30 +395,36 @@ body{
     border-radius: 6px;
     padding: 15px;
 }
-.spotify-playlist .card .item:hover{
-    background-color: #3d3c3c;
+
+.spotify-playlist .card .item:hover {
+    background: linear-gradient(#313131, #1a1a1a, #1a1a1a, #1a1a1a);
 }
 
-.spotify-playlist .card .item img{
+.spotify-playlist .card .item img {
     width: 100%;
     border-radius: 6px;
     margin-bottom: 10px;
 }
-.spotify-playlist .item h4{
+
+.spotify-playlist .item h4 {
     color: white;
 }
-.spotify-playlist .item p{
+
+.spotify-playlist .item p {
     color: #d4d4d4;
     font-size: 13px;
     margin-top: 10px;
 }
-.spotify-playlist .item p:hover{
+
+.spotify-playlist .item p:hover {
     text-decoration: underline;
 }
-.spotify-playlist .play-btn{
+
+.spotify-playlist .play-btn {
     position: relative;
 }
-.spotify-playlist .play-btn i{
+
+.spotify-playlist .play-btn i {
     font-size: 45px;
     position: absolute;
     right: 5px;
@@ -334,72 +432,80 @@ body{
     opacity: 0;
     transition: 0.2s;
 }
-.spotify-playlist .card .item:hover .play-btn i{
+
+.spotify-playlist .card .item:hover .play-btn i {
     opacity: 1;
     transform: scale(1.03);
     transform: translateY(-20px);
-   
-} 
+
+}
 
 /**/
 
-.footer-section{
-    padding: 20px 40px;
+.footer-section {
+    padding: 20px 18px;
 
 }
-.footer-section .footer{
+
+.footer-section .footer {
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
 }
 
-.footer-section .footer .footer-links{
+.footer-section .footer .footer-links {
     display: flex;
     justify-content: space-between;
     gap: 50px;
 }
-.footer-section .footer .footer-links .footer-column{
+
+.footer-section .footer .footer-links .footer-column {
     margin: 12px;
 }
-.footer-section .footer .footer-links div{
+
+.footer-section .footer .footer-links div {
     color: white;
     font-weight: 600;
     margin-bottom: 12px;
     font-size: 16px;
 }
 
-.footer-section .footer .footer-links ul li{
-list-style: none;
-margin: 6px 0;
+.footer-section .footer .footer-links ul li {
+    list-style: none;
+    margin: 15px 0;
+
 }
-.footer-section .footer .footer-links ul li a{
+
+.footer-section .footer .footer-links ul li a {
     text-decoration: none;
     color: #969393;
-    font-size: 14px;
+    font-size: 15px;
     cursor: pointer;
-    }
-.footer-section .footer .footer-links ul li a:hover{
+    margin-right: 50px;
+}
+
+.footer-section .footer .footer-links ul li a:hover {
     text-decoration: underline;
     color: #ffffff;
-   }
+}
 
-   
-.footer .social-links i{
+
+.footer .social-links i {
     color: white;
     background: #353434;
     padding: 12px;
     border-radius: 50%;
     margin: 0 5px;
     cursor: pointer;
-   }
+}
 
 
 
-.footer .social-links i:hover{
+.footer .social-links i:hover {
     background: #636262;
-    }
+}
 
-hr{
+hr {
     margin: 20px 40px;
     border: 0;
     outline: 0;
@@ -407,17 +513,39 @@ hr{
     margin-top: 40px;
 
 }
-.copyright{
+
+.copyright {
     padding: 0 40px;
     color: #969393;
     font-size: 15px;
     margin-bottom: 30px;
 
 }
-.me{
+
+.me {
     padding: 0px 40px;
     color: #969393;
     font-size: 15px;
     margin-bottom: 30px;
 
+}
+
+.main-section::-webkit-scrollbar {
+    background: transparent;
+    width: 10px;
+
+}
+
+.main-section::-webkit-scrollbar-track {
+    background: #121212;
+}
+
+.main-section::-webkit-scrollbar-thumb {
+    background: transparent;
+
+}
+
+.main-section:hover::-webkit-scrollbar-thumb {
+    background: linear-gradient(#313131, #1a1a1a, #1a1a1a, #1a1a1a);
+    width: 5px;
 }
