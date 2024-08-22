@@ -1,4 +1,4 @@
-# Spotify Clone
+   # Spotify Clone
 
 Welcome to the **Spotify Clone** This project is a basic front-end replica of Spotify, created using only HTML and CSS. This initial version includes only the static front page and does not include functionality for searching songs, creating playlists, or listening to music. These features will be added in future updates.
 
@@ -22,6 +22,10 @@ Planned features to be added:
 - **Search Functionality**: Allow users to search for songs, albums, and artists.
 - **Create Playlist**: Enable users to create and manage playlists.
 - **Listen to Music**: Integrate a music player to listen to songs.
+
+<p align="center">
+    <a href="https://sahil-pant.github.io/Spotify-Clone_Homepage/SpotifyClone.html">Here is my work</a> 
+  </p>
 
 Happy coding!
 
