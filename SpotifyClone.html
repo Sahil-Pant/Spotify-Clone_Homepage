@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,318 +8,355 @@
     <link rel="stylesheet" href="SpotifyClone.css">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
 </head>
+
 <body>
 
-                                                     <!-- Sidebar Section-->
+    <!-- Sidebar Section-->
     <div class="sidebar">
         <div class="sidebar-nav">
             <div class="logo">
                 <a href=""><img src="https://www.coverartmarket.com/images/managed/spotify-logo.png" alt=""></a>
             </div>
             <ul class="HOME">
-                <li> <a href="">
-                    <span><i class="fa-solid fa-house fa-lg"></i></span>
-                    <span>Home</span>
-                </a></li>
+                <div class="scr">
+                    <li> <a href="">
+                            <span><i class="fa-solid fa-house fa-lg"></i></span>
+                            <span>Home</span>
+                        </a></li>
 
-                <li> <a href="">
-                    <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
-                    <span>Search</span>
-                </a></li>
+                    <li> <a href="">
+                            <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+                            <span>Search</span>
+                        </a></li>
+                </div>
+
             </ul>
         </div>
 
         <div class="sidebar-nav">
-            <ul>
-                <li> <a href="">
-                    <span><i class="fa-solid fa-books fa-lg"></i></span>
-                    <span class="library">Your Library</span>
-                </a></li>
-
-                <li> 
-                    <div class="sidebar-scroll">
-                        <div class="create-playlist">
-                            <h4> Create your first playlist</h4>
-                            <p>It's easy, we'll help you</p>
-                            <button>create Playlist</button>
-                        </div>
-                        <div class="create-playlist">
-                            <h4> Lets find dome podcasts to follow</h4>
-                            <p>We'll find you updated on new episode</p>
-                            <button>Browse Podcasts</button>    
-                        </div>
-                    </div>
-                </li>
-            </ul>
-            <div class="privacy">
+            <div class="sb">
                 <ul>
+                    <li> <a href="">
+                            <div class="lib">
+                                <span><i class="fa-solid fa-books fa-lg"></i></span>
+                                <span class="library">Your Library</span>
+                            </div>
+
+                        </a></li>
+
                     <li>
-                        <a href="">Legal</a>
-                        <a href="">Safety & Privacy</a>
-                        <a href="">Privacy Policy</a>
+                        <div class="cp">
+                            <div class="sidebar-scroll">
+                                <div class="create-playlist">
+                                    <h4> Create your first playlist</h4>
+                                    <p>It's easy, we'll help you</p>
+                                    <button>create Playlist</button>
+                                </div>
+                                <div class="create-playlist">
+                                    <h4> Lets find dome podcasts to follow</h4>
+                                    <p>We'll find you updated on new episode</p>
+                                    <button>Browse Podcasts</button>
+                                </div>
+                            </div>
+                        </div>
                     </li>
-    
-                    <li>
-                        <a href="">Cookies</a>
-                        <a href="">About Ads</a>
-                        <a href="">Accessibility</a>
-                    </li>
-                    <li>
-                        <a href="">Cookies</a>
-                    </li>
-                    
                 </ul>
+                <div class="privacy">
+                    <ul>
+                        <li>
+                            <a href="">Legal</a>
+                            <a href="">Safety & Privacy</a>
+                            <a href="">Privacy Policy</a>
+                        </li>
+
+                        <li>
+                            <a href="">Cookies</a>
+                            <a href="">About Ads</a>
+                            <a href="">Accessibility</a>
+                        </li>
+                        <li>
+                            <a href="">Cookies</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="eng-btn">
+                    <button><i class="fa-light fa-globe"></i> English</button>
+                </div>
             </div>
-            <div class="eng-btn">
-                <button>English</button>
-            </div>
         </div>
-   </div>
 
-                                                <!-- This is the main section-->
-
-
-   <div class="main-section">
-    <div class="top-nav">
-        <div class="prev-btn">
-            <button><i class="fa-sharp fa-solid fa-less-than"></i></button>
-            <button><i class="fa-sharp fa-solid fa-greater-than"></i></button>
-        </div>
-        <div class="login-btn">
-            <button class="sign-up"> <i class="fa-solid fa-user-plus"></i> Sign Up</button>
-            <button class="log-in"> <i class="fa-regular fa-right-to-bracket"></i> Log in</button>
-        </div>
     </div>
 
-                                                <!-- Repeat this block for each playlist-->
-    <div class="spotify-playlists">
-        <h2>Popular Artists</h2>
-        <div class="cards">
-            <div class="items">
-                <img src="https://i.scdn.co/image/ab6761610000e5ebb19af0ea736c6228d6eb539c" alt="">
-                <div class="play-btns">
-                    <span><i class="fa-duotone fa-circle-play fa-2xl" style="--fa-primary-color: #000000; --fa-secondary-color: #04ff00; --fa-secondary-opacity: 1;"></i></span>
-                </div>
-                <h4>A.R. Rahman</h4>
-                <p>Artist</p>
-            </div>
-            <div class="items">
-                <img src="https://i.scdn.co/image/ab6761610000e5ebc40600e02356cc86f0debe84" alt="">
-                <div class="play-btns">
-                    <span><i class="fa-duotone fa-circle-play fa-2xl" style="--fa-primary-color: #000000; --fa-secondary-color: #04ff00; --fa-secondary-opacity: 1;"></i></span>
-                </div>
-                <h4>Atif Aslam</h4>
-                <p>Artist</p>
-            </div>
-            <div class="items">
-                <img src="https://i.scdn.co/image/ab6761610000e5ebb09a31f853166e721d4d46b2" alt="">
-                <div class="play-btns">
-                    <span><i class="fa-duotone fa-circle-play fa-2xl" style="--fa-primary-color: #000000; --fa-secondary-color: #04ff00; --fa-secondary-opacity: 1;"></i></span>
-                </div>
-                <h4>KK</h4>
-                <p>Artist</p>
-            </div>
-            <div class="items">
-                <img src="https://i.scdn.co/image/ab6761610000e5ebcb6926f44f620555ba444fca" alt="">
-                <div class="play-btns">
-                    <span><i class="fa-duotone fa-circle-play fa-2xl" style="--fa-primary-color: #000000; --fa-secondary-color: #04ff00; --fa-secondary-opacity: 1;"></i></span>
-                </div>
-                <h4>Pritam</h4>
-                <p>Artist</p>
-            </div>
-            <div class="items">
-                <img src="https://i.scdn.co/image/ab6761610000e5ebbc959d7569618ec2af2210f5" alt="">
-                <div class="play-btns">
-                    <span><i class="fa-duotone fa-circle-play fa-2xl" style="--fa-primary-color: #000000; --fa-secondary-color: #04ff00; --fa-secondary-opacity: 1;"></i></span>
-                </div>
-                <h4>Sonu Nigam</h4>
-                <p>Artist</p>
-            </div>
-            <div class="items">
-                <img src="https://i.scdn.co/image/ab6761610000e5eb3f27a828c24d73cf0427e2e7" alt="">
-                <div class="play-btns">
-                    <span><i class="fa-duotone fa-circle-play fa-2xl" style="--fa-primary-color: #000000; --fa-secondary-color: #04ff00; --fa-secondary-opacity: 1;"></i></span>
-                </div>
-                <h4>Shankar Mahadevan</h4>
-                <p>Artist</p>
-            </div>
-            
-            
-        </div>
-    </div>   
-                                                <!--Example mix block playlist-->
+    <!-- This is the main section-->
 
 
-    <div class="spotify-playlist">
-        <h2>Popular Albums</h2>
-        <div class="card">
-            <div class="item">
-                <img src="https://i.scdn.co/image/ab67616d0000b2736404721c1943d5069f0805f3" alt="">
-                <div class="play-btn">
-                    <span><i class="fa-duotone fa-circle-play fa-2xl" style="--fa-primary-color: #000000; --fa-secondary-color: #04ff00; --fa-secondary-opacity: 1;"></i></span>
-                </div>
-                <h4>Aashiqui 2</h4>
-                <p>Mithoon, Ankit Tiwari, Jeet Ganguli</p>
+    <div class="main-section">
+        <div class="top-nav">
+            <div class="prev-btn">
+                <button><i class="fa-solid fa-less-than fa-xs"></i></button>
+                <button><i class="fa-solid fa-greater-than fa-xs"></i></button>
             </div>
-            <div class="item">
-                <img src="https://i.scdn.co/image/ab67616d0000b27354e544672baa16145d67612b" alt="">
-                <div class="play-btn">
-                    <span><i class="fa-duotone fa-circle-play fa-2xl" style="--fa-primary-color: #000000; --fa-secondary-color: #04ff00; --fa-secondary-opacity: 1;"></i></span>
-                </div>
-                <h4>Rockstar</h4>
-                <p>Mohit Chauhan, AR Rahman</p>
+            <div class="login-btn">
+                <button class="sign-up"> <i class="fa-solid fa-user-plus"></i> Sign Up</button>
+                <button class="log-in"> <i class="fa-regular fa-right-to-bracket"></i> Log in</button>
             </div>
-            <div class="item">
-                <img src="https://i.scdn.co/image/ab67616d0000b27352fe6875028c892308ffc2f7" alt="">
-                <div class="play-btn">
-                    <span><i class="fa-duotone fa-circle-play fa-2xl" style="--fa-primary-color: #000000; --fa-secondary-color: #04ff00; --fa-secondary-opacity: 1;"></i></span>
-                </div>
-                <h4>Jab We Met</h4>
-                <p>Pritam, Shreya Ghoshal, Sonu Nigam</p>
-            </div>
-            <div class="item">
-                <img src="https://i.scdn.co/image/ab67616d0000b273c5545f737b16ad5ee767b62a" alt="">
-                <div class="play-btn">
-                    <span><i class="fa-duotone fa-circle-play fa-2xl" style="--fa-primary-color: #000000; --fa-secondary-color: #04ff00; --fa-secondary-opacity: 1;"></i></span>
-                </div>
-                <h4>Kabir Singh</h4>
-                <p>Shreya Ghoshal, Arijit Singh, Jubin Nautiyal</p>
-            </div>
-            <div class="item">
-                <img src="https://i.scdn.co/image/ab67616d0000b273cb2f9520171129a3df7a241a" alt="">
-                <div class="play-btn">
-                    <span><i class="fa-duotone fa-circle-play fa-2xl" style="--fa-primary-color: #000000; --fa-secondary-color: #04ff00; --fa-secondary-opacity: 1;"></i></span>
-                </div>
-                <h4>Ghost</h4>
-                <p>Diljit Dosanjh</p>
-            </div>
-            <div class="item">
-                <img src="https://i.scdn.co/image/ab67616d0000b273707ea5b8023ac77d31756ed4" alt="">
-                <div class="play-btn">
-                    <span><i class="fa-duotone fa-circle-play fa-2xl" style="--fa-primary-color: #000000; --fa-secondary-color: #04ff00; --fa-secondary-opacity: 1;"></i></span>
-                </div>
-                <h4>Yeh Jawaani Hai Deewani</h4>
-                <p>Pritam</p>
-            </div>
-            
         </div>
+
+        <!-- Repeat this block for each playlist-->
+        <div class="spotify-playlists">
+            <h2>Popular Artists</h2>
+            <div class="cards">
+                <div class="items">
+                    <img src="https://i.scdn.co/image/ab6761610000e5ebb19af0ea736c6228d6eb539c" alt="">
+                    <div class="play-btns">
+                        <span><i class="fa-duotone fa-circle-play fa-2xl"
+                                style="--fa-primary-color: #000000; --fa-secondary-color: #04ff00; --fa-secondary-opacity: 1;"></i></span>
+                    </div>
+                    <h4>A.R. Rahman</h4>
+                    <p>Artist</p>
+                </div>
+                <div class="items">
+                    <img src="https://i.scdn.co/image/ab6761610000e5ebc40600e02356cc86f0debe84" alt="">
+                    <div class="play-btns">
+                        <span><i class="fa-duotone fa-circle-play fa-2xl"
+                                style="--fa-primary-color: #000000; --fa-secondary-color: #04ff00; --fa-secondary-opacity: 1;"></i></span>
+                    </div>
+                    <h4>Atif Aslam</h4>
+                    <p>Artist</p>
+                </div>
+                <div class="items">
+                    <img src="https://i.scdn.co/image/ab6761610000e5ebb09a31f853166e721d4d46b2" alt="">
+                    <div class="play-btns">
+                        <span><i class="fa-duotone fa-circle-play fa-2xl"
+                                style="--fa-primary-color: #000000; --fa-secondary-color: #04ff00; --fa-secondary-opacity: 1;"></i></span>
+                    </div>
+                    <h4>KK</h4>
+                    <p>Artist</p>
+                </div>
+                <div class="items">
+                    <img src="https://i.scdn.co/image/ab6761610000e5ebcb6926f44f620555ba444fca" alt="">
+                    <div class="play-btns">
+                        <span><i class="fa-duotone fa-circle-play fa-2xl"
+                                style="--fa-primary-color: #000000; --fa-secondary-color: #04ff00; --fa-secondary-opacity: 1;"></i></span>
+                    </div>
+                    <h4>Pritam</h4>
+                    <p>Artist</p>
+                </div>
+                <div class="items">
+                    <img src="https://i.scdn.co/image/ab6761610000e5ebbc959d7569618ec2af2210f5" alt="">
+                    <div class="play-btns">
+                        <span><i class="fa-duotone fa-circle-play fa-2xl"
+                                style="--fa-primary-color: #000000; --fa-secondary-color: #04ff00; --fa-secondary-opacity: 1;"></i></span>
+                    </div>
+                    <h4>Sonu Nigam</h4>
+                    <p>Artist</p>
+                </div>
+                <div class="items">
+                    <img src="https://i.scdn.co/image/ab6761610000e5eb3f27a828c24d73cf0427e2e7" alt="">
+                    <div class="play-btns">
+                        <span><i class="fa-duotone fa-circle-play fa-2xl"
+                                style="--fa-primary-color: #000000; --fa-secondary-color: #04ff00; --fa-secondary-opacity: 1;"></i></span>
+                    </div>
+                    <h4>Shankar Mahadevan</h4>
+                    <p>Artist</p>
+                </div>
+
+
+            </div>
+        </div>
+        <!--Example mix block playlist-->
+
+
+        <div class="spotify-playlist">
+            <h2>Popular Albums</h2>
+            <div class="card">
+                <div class="item">
+                    <img src="https://i.scdn.co/image/ab67616d0000b2736404721c1943d5069f0805f3" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-duotone fa-circle-play fa-2xl"
+                                style="--fa-primary-color: #000000; --fa-secondary-color: #04ff00; --fa-secondary-opacity: 1;"></i></span>
+                    </div>
+                    <h4>Aashiqui 2</h4>
+                    <p>Mithoon, Ankit Tiwari, Jeet Ganguli</p>
+                </div>
+                <div class="item">
+                    <img src="https://i.scdn.co/image/ab67616d0000b27354e544672baa16145d67612b" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-duotone fa-circle-play fa-2xl"
+                                style="--fa-primary-color: #000000; --fa-secondary-color: #04ff00; --fa-secondary-opacity: 1;"></i></span>
+                    </div>
+                    <h4>Rockstar</h4>
+                    <p>Mohit Chauhan, AR Rahman</p>
+                </div>
+                <div class="item">
+                    <img src="https://i.scdn.co/image/ab67616d0000b27352fe6875028c892308ffc2f7" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-duotone fa-circle-play fa-2xl"
+                                style="--fa-primary-color: #000000; --fa-secondary-color: #04ff00; --fa-secondary-opacity: 1;"></i></span>
+                    </div>
+                    <h4>Jab We Met</h4>
+                    <p>Pritam, Shreya Ghoshal, Sonu Nigam</p>
+                </div>
+                <div class="item">
+                    <img src="https://i.scdn.co/image/ab67616d0000b273c5545f737b16ad5ee767b62a" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-duotone fa-circle-play fa-2xl"
+                                style="--fa-primary-color: #000000; --fa-secondary-color: #04ff00; --fa-secondary-opacity: 1;"></i></span>
+                    </div>
+                    <h4>Kabir Singh</h4>
+                    <p>Shreya Ghoshal, Arijit Singh, Jubin Nautiyal</p>
+                </div>
+                <div class="item">
+                    <img src="https://i.scdn.co/image/ab67616d0000b273cb2f9520171129a3df7a241a" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-duotone fa-circle-play fa-2xl"
+                                style="--fa-primary-color: #000000; --fa-secondary-color: #04ff00; --fa-secondary-opacity: 1;"></i></span>
+                    </div>
+                    <h4>Ghost</h4>
+                    <p>Diljit Dosanjh</p>
+                </div>
+                <div class="item">
+                    <img src="https://i.scdn.co/image/ab67616d0000b273707ea5b8023ac77d31756ed4" alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-duotone fa-circle-play fa-2xl"
+                                style="--fa-primary-color: #000000; --fa-secondary-color: #04ff00; --fa-secondary-opacity: 1;"></i></span>
+                    </div>
+                    <h4>Yeh Jawaani Hai Deewani</h4>
+                    <p>Pritam</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="spotify-playlist">
+            <h2>Popular Radio</h2>
+            <div class="card">
+                <div class="item">
+                    <img src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/1mYsTxnqsietFxj1OgoGbG/en"
+                        alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-duotone fa-circle-play fa-2xl"
+                                style="--fa-primary-color: #000000; --fa-secondary-color: #04ff00; --fa-secondary-opacity: 1;"></i></span>
+                    </div>
+                    <h4>A.R. Rahman Radio</h4>
+                    <p>Artist</p>
+                </div>
+                <div class="item">
+                    <img src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/4YRxDV8wJFPHPTeXepOstw/en-GB"
+                        alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-duotone fa-circle-play fa-2xl"
+                                style="--fa-primary-color: #000000; --fa-secondary-color: #04ff00; --fa-secondary-opacity: 1;"></i></span>
+                    </div>
+                    <h4>Arijit Singh Radio </h4>
+                    <p>Artist</p>
+                </div>
+                <div class="item">
+                    <img src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/4fEkbug6kZzzJ8eYX6Kbbp/en"
+                        alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-duotone fa-circle-play fa-2xl"
+                                style="--fa-primary-color: #000000; --fa-secondary-color: #04ff00; --fa-secondary-opacity: 1;"></i></span>
+                    </div>
+                    <h4>KK</h4>
+                    <p>Artist</p>
+                </div>
+                <div class="item">
+                    <img src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/0GF4shudTAFv8ak9eWdd4Y/en-GB"
+                        alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-duotone fa-circle-play fa-2xl"
+                                style="--fa-primary-color: #000000; --fa-secondary-color: #04ff00; --fa-secondary-opacity: 1;"></i></span>
+                    </div>
+                    <h4>Kishore Kumar</h4>
+                    <p>Artist</p>
+                </div>
+                <div class="item">
+                    <img src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/2oSONSC9zQ4UonDKnLqksx/en-GB"
+                        alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-duotone fa-circle-play fa-2xl"
+                                style="--fa-primary-color: #000000; --fa-secondary-color: #04ff00; --fa-secondary-opacity: 1;"></i></span>
+                    </div>
+                    <h4>Atif Aslam</h4>
+                    <p>Artist</p>
+                </div>
+                <div class="item">
+                    <img src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/4K6blSRoklNdpw4mzLxwfn/en-GB"
+                        alt="">
+                    <div class="play-btn">
+                        <span><i class="fa-duotone fa-circle-play fa-2xl"
+                                style="--fa-primary-color: #000000; --fa-secondary-color: #04ff00; --fa-secondary-opacity: 1;"></i></span>
+                    </div>
+                    <h4>Kumar Sanu</h4>
+                    <p>Artist</p>
+                </div>
+            </div>
+        </div>
+        <!-- This is footer section-->
+        <div class="footer-section">
+            <div class="footer">
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <div>Company</div>
+                        <ul class="column-link">
+                            <li><a href="">About</a></li>
+                            <li><a href="">Jobs</a></li>
+                            <li><a href="">For the Record</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <div>Communities</div>
+                        <ul class="column-link">
+                            <li><a href="">For Artists</a></li>
+                            <li><a href="">Developers</a></li>
+                            <li><a href="">Advertising</a></li>
+                            <li><a href="">Investors</a></li>
+                            <li><a href="">Vendors</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <div>Useful links</div>
+                        <ul class="column-link">
+                            <li><a href="">Support</a></li>
+                            <li><a href="">Free Mobile App</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <div>Spotify Plans</div>
+                        <ul class="column-link">
+                            <li><a href="">Premium Individual</a></li>
+                            <li><a href="">Premium Duo</a></li>
+                            <li><a href="">Premium Family</a></li>
+                            <li><a href="">Premium Student</a></li>
+                            <li><a href="">Spotify Free</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <i class="fa-brands fa-instagram"></i>
+
+                    <i class="fa-brands fa-twitter"></i>
+
+                    <i class="fa-brands fa-facebook"></i>
+
+                </div>
+            </div>
+        </div>
+
+
+        <hr>
+
+        <div>
+            <p class="copyright">&copy; 2024 Spotify AB</p>
+        </div>
+        <div>
+            <p class="me">By Sahil Pant</p>
+        </div>
+
+
     </div>
-    <div class="spotify-playlist">
-        <h2>Popular Radio</h2>
-        <div class="card">
-            <div class="item">
-                <img src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/1mYsTxnqsietFxj1OgoGbG/en" alt="">
-                <div class="play-btn">
-                    <span><i class="fa-duotone fa-circle-play fa-2xl" style="--fa-primary-color: #000000; --fa-secondary-color: #04ff00; --fa-secondary-opacity: 1;"></i></span>
-                </div>
-                <h4>A.R. Rahman Radio</h4>
-                <p>Artist</p>
-            </div>
-            <div class="item">
-                <img src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/4YRxDV8wJFPHPTeXepOstw/en-GB" alt="">
-                <div class="play-btn">
-                    <span><i class="fa-duotone fa-circle-play fa-2xl" style="--fa-primary-color: #000000; --fa-secondary-color: #04ff00; --fa-secondary-opacity: 1;"></i></span>
-                </div>
-                <h4>Arijit Singh Radio </h4>
-                <p>Artist</p>
-            </div>
-            <div class="item">
-                <img src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/4fEkbug6kZzzJ8eYX6Kbbp/en" alt="">
-                <div class="play-btn">
-                    <span><i class="fa-duotone fa-circle-play fa-2xl" style="--fa-primary-color: #000000; --fa-secondary-color: #04ff00; --fa-secondary-opacity: 1;"></i></span>
-                </div>
-                <h4>KK</h4>
-                <p>Artist</p>
-            </div>
-            <div class="item">
-                <img src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/0GF4shudTAFv8ak9eWdd4Y/en-GB" alt="">
-                <div class="play-btn">
-                    <span><i class="fa-duotone fa-circle-play fa-2xl" style="--fa-primary-color: #000000; --fa-secondary-color: #04ff00; --fa-secondary-opacity: 1;"></i></span>
-                </div>
-                <h4>Kishore Kumar</h4>
-                <p>Artist</p>
-            </div>
-            <div class="item">
-                <img src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/2oSONSC9zQ4UonDKnLqksx/en-GB" alt="">
-                <div class="play-btn">
-                    <span><i class="fa-duotone fa-circle-play fa-2xl" style="--fa-primary-color: #000000; --fa-secondary-color: #04ff00; --fa-secondary-opacity: 1;"></i></span>
-                </div>
-                <h4>Atif Aslam</h4>
-                <p>Artist</p>
-            </div>
-            <div class="item">
-                <img src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/4K6blSRoklNdpw4mzLxwfn/en-GB" alt="">
-                <div class="play-btn">
-                    <span><i class="fa-duotone fa-circle-play fa-2xl" style="--fa-primary-color: #000000; --fa-secondary-color: #04ff00; --fa-secondary-opacity: 1;"></i></span>
-                </div>
-                <h4>Kumar Sanu</h4>
-                <p>Artist</p>
-            </div>
-        </div>
-    </div>
-                                            <!-- This is footer section-->
-    <div class="footer-section">
-        <div class="footer">
-            <div class="footer-links">
-                <div class="footer-column">
-                    <div>Company</div>
-                    <ul class="column-link">
-                        <li><a href="">About</a></li>
-                        <li><a href="">Jobs</a></li>
-                    <li><a href="">For the Record</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <div>Communities</div>
-                    <ul class="column-link">
-                        <li><a href="">For Artists</a></li>
-                        <li><a href="">Developers</a></li>
-                        <li><a href="">Advertising</a></li>
-                        <li><a href="">Investors</a></li>
-                        <li><a href="">Vendors</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <div>Useful links</div>
-                    <ul class="column-link">
-                        <li><a href="">Support</a></li>
-                        <li><a href="">Free Mobile App</a></li>
-                    
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <div>Spotify Plans</div>
-                    <ul class="column-link">
-                        <li><a href="">For Artists</a></li>
-                        <li><a href="">Developers</a></li>
-                        <li><a href="">Advertising</a></li>
-                        <li><a href="">Investors</a></li>
-                        <li><a href="">Vendors</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="social-links">
-                <i class="fa-brands fa-instagram"></i>
-               
-                <i class="fa-brands fa-twitter"></i>
-               
-                <i class="fa-brands fa-facebook"></i>
-               
-            </div>
-        </div>
-        </div>
-
-
-<hr>
-
-<div>
-    <p class="copyright">&copy; 2024 Spotify AB</p>
-</div>
-<div>
-    <p class="me">By Sahil Pant</p>
-</div>
-
-
-   </div>
 </body>
+
 </html>
