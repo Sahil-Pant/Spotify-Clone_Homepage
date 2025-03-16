@@ -24,7 +24,7 @@ Planned features to be added:
 - **Listen to Music**: Integrate a music player to listen to songs.
 
 <p align="center">
-    <a href="https://sahil-pant.github.io/Spotify-Clone_Homepage/SpotifyClone.html">Here is my work</a> 
+    <a href="https://sahil-pant.github.io/Spotify-Clone_Homepage/">Here is my work</a> 
   </p>
 
 Happy coding!
