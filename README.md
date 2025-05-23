@@ -1,32 +1,57 @@
-   # Spotify Clone
-
-Welcome to the **Spotify Clone** This project is a basic front-end replica of Spotify, created using only HTML and CSS. This initial version includes only the static front page and does not include functionality for searching songs, creating playlists, or listening to music. These features will be added in future updates.
-
-## Project Overview
-
-This project aims to replicate the look and feel of Spotify's front page. It includes:
-
-- A header section with navigation links
-- A main section displaying featured playlists and popular albums
-- A footer with additional navigation and information links
-
-## Features
-
-- **Static Front Page**: The front page is designed to look like Spotify's main landing page.
-- **Pure HTML and CSS**: The project is built using only HTML and CSS without any JavaScript or backend functionality.
-
-## Future Updates
-
-Planned features to be added:
-
-- **Search Functionality**: Allow users to search for songs, albums, and artists.
-- **Create Playlist**: Enable users to create and manage playlists.
-- **Listen to Music**: Integrate a music player to listen to songs.
-
-<p align="center">
-    <a href="https://sahil-pant.github.io/Spotify-Clone_Homepage/">Here is my work</a> 
-  </p>
-
-Happy coding!
+# 🎵 Spotify Clone Homepage
 
 ---
+
+## 🌐 Live Demo
+
+🔗 [View Live Spotify Clone](https://sahil-pant.github.io/Spotify-Clone_Homepage/)
+
+---
+
+## 🛠️ Tech Stack
+
+![HTML5](https://img.shields.io/badge/-HTML5-E34F26?logo=html5&logoColor=fff&style=flat)
+![CSS3](https://img.shields.io/badge/-CSS3-1572B6?logo=css3&logoColor=fff&style=flat)
+![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=000&style=flat)
+
+---
+
+## ✨ Features
+
+- 🎯 Pixel-perfect Spotify homepage replica
+- 🎨 Modern UI with clean and responsive layout
+- 💡 Hover effects and interactive elements
+- ⚡ Fast loading static site
+
+---
+
+## 📁 Project Structure
+
+Spotify-Clone_Homepage/<br>
+├── index.html<br>
+├── style.css<br>
+└── script.js<br>
+
+
+---
+
+## 🚀 Future Enhancements
+
+- 📱 Fully responsive design for mobile & tablet
+- 🌀 Add animations and transitions with GSAP
+- 🔗 Integrate actual Spotify APIs for dynamic content
+- 🧑‍💻 Improve accessibility and SEO
+
+---
+
+## 🧑‍💻 Author
+
+**Sahil Pant**  
+[![GitHub](https://img.shields.io/badge/-GitHub-181717?logo=github&logoColor=fff&style=flat)](https://github.com/Sahil-Pant)  
+
+
+---
+
+
+
+> ⭐ If you find this project helpful or inspiring, please give it a star!
